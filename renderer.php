@@ -629,11 +629,11 @@ class mod_scheduler_renderer extends plugin_renderer_base {
                 $startdatestr = '';
                 $starttimestr = '';
                 $endtimestr = '';
-            } else if ($startdate == $previousdate) {
-                // If this date matches previous date, just display times.
-                $startdatestr = '';
-                $starttimestr = $starttime;
-                $endtimestr = $endtime;
+            // } else if ($startdate == $previousdate) {
+            //     // If this date matches previous date, just display times.
+            //     $startdatestr = '';
+            //     $starttimestr = $starttime;
+            //     $endtimestr = $endtime;
             } else {
                 // Otherwise, display all elements.
                 $startdatestr = $startdate;
@@ -747,11 +747,11 @@ class mod_scheduler_renderer extends plugin_renderer_base {
                 $startdatestr = '';
                 $starttimestr = '';
                 $endtimestr = '';
-            } else if ($startdate == $previousdate) {
-                // If this date matches previous date, just display times.
-                $startdatestr = '';
-                $starttimestr = $starttime;
-                $endtimestr = $endtime;
+            // } else if ($startdate == $previousdate) {
+            //     // If this date matches previous date, just display times.
+            //     $startdatestr = '';
+            //     $starttimestr = $starttime;
+            //     $endtimestr = $endtime;
             } else {
                 // Otherwise, display all elements.
                 $startdatestr = $startdate;
