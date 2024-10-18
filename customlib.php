@@ -73,5 +73,14 @@ function scheduler_get_user_fields($user, $context) {
         }
     }
     */
+
+	// Personalizzazione PT 18/10/2024: mostra la matricola nel dettaglio della prenotazione [richiesta INC0127935]
+    if (has_capability('moodle/site:viewuseridentity', $context) && $user && $user->idnumber) {
+		$matricola = new stdClass();
+		$matricola->title = get_string('idnumber');
+		$matricola->value = $user->idnumber;
+		$fields[] = $matricola;
+    }
+	
     return $fields;
 }
